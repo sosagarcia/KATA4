@@ -35,6 +35,7 @@ public class KATA4 {
         }
         System.out.println(new Date().getTime() - date.getTime() + "msg.");
         
+        
         //print (file.listFiles(),"");
         
         /*
