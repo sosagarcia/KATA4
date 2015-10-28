@@ -1,34 +1,22 @@
 
 package kata4;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.ArrayList;
+
 
 
 public class KATA4 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException, IOException {
         
-        Histogram<String>histo = new Histogram<>();
+   
         String nameFile = "C:\\Users\\usuario\\Documents\\NetBeansProjects\\KATA4\\DATA\\emails.txt";
-        histo.increment("gmail");
-        histo.increment("gmail");
-        histo.increment("gmail");
+  
+        ArrayList <String> mailarray = MailListReader.reader(nameFile);
         
-        histo.increment("hotmail");
-        histo.increment("hotmail");
-        histo.increment("hotmail");
-        histo.increment("hotmail");
-        histo.increment("hotmail");
-        histo.increment("hotmail");
-        
-        histo.increment("ulpgc");
-        histo.increment("ulpgc");
-        histo.increment("ulpgc");
-        histo.increment("ulpgc");
-        histo.increment("ulpgc");
-        histo.increment("ulpgc");
-        histo.increment("ulpgc");
-        histo.increment("ulpgc");
-        histo.increment("ulpgc");
+        Histogram <String> histo = MailHistogramBuilder.build(mailarray);
 
         
         

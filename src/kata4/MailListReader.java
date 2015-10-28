@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class MainListReader {
+public class MailListReader {
     
     public static ArrayList <String> reader (String name) throws FileNotFoundException, IOException{
     ArrayList <String> mailList = new ArrayList<>();
